@@ -1,0 +1,31 @@
+{
+  "name": "laraorvite/eloquent-wildcard-validator",
+  "description": "Fixes ErrorException: Indirect modification of overloaded property in Laravel nested validation.",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "LaraOrVite\\Validation\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "LaraOrVite\\Validation\\ValidationFixServiceProvider"
+      ]
+    }
+  },
+  "require": {
+    "php": "^8.2|^8.3|^8.4|^8.5",
+    "illuminate/validation": "^11.0|^12.0|^13.0",
+    "illuminate/support": "^11.0|^12.0|^13.0"
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "LaraOrVite\\Validation\\Tests\\": "tests/"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^10.0|^11.0",
+    "orchestra/testbench": "^9.0"
+  }
+}
