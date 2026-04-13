@@ -2,10 +2,10 @@
 
 namespace LaraOrVite\Validation\Tests;
 
+use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Translation\ArrayLoader;
 use Illuminate\Translation\Translator;
 use LaraOrVite\Validation\EloquentWildcardValidator;
-use Illuminate\Contracts\Support\Arrayable;
 use PHPUnit\Framework\Attributes\Test;
 
 class ValidatorTest extends TestCase
