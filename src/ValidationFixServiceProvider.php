@@ -16,5 +16,4 @@ class ValidationFixServiceProvider extends ServiceProvider
             return new EloquentWildcardValidator($translator, $data, $rules, $messages, $attributes);
         });
     }
-
 }

@@ -44,5 +44,4 @@ class ValidatorTest extends TestCase
         $this->assertFalse($validator->fails(), 'Validation failed unexpectedly');
         $this->assertEquals('test@example.com', $person->email, 'The email should not be null');
     }
-
 }
