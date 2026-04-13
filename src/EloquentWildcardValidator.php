@@ -2,8 +2,8 @@
 
 namespace LaraOrVite\Validation;
 
-use Illuminate\Validation\Validator;
 use Illuminate\Contracts\Support\Arrayable;
+use Illuminate\Validation\Validator;
 
 class EloquentWildcardValidator extends Validator
 {
@@ -26,7 +26,7 @@ class EloquentWildcardValidator extends Validator
             return $data->toArray();
         }
 
-        if (! is_array($data)) {
+        if (!is_array($data)) {
             return $data;
         }
 

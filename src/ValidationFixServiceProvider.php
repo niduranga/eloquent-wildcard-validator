@@ -2,8 +2,8 @@
 
 namespace LaraOrVite\Validation;
 
-use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\ServiceProvider;
 
 class ValidationFixServiceProvider extends ServiceProvider
 {
@@ -16,4 +16,5 @@ class ValidationFixServiceProvider extends ServiceProvider
             return new EloquentWildcardValidator($translator, $data, $rules, $messages, $attributes);
         });
     }
+
 }

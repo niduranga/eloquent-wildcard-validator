@@ -13,4 +13,5 @@ class TestCase extends Orchestra
             ValidationFixServiceProvider::class,
         ];
     }
+
 }
