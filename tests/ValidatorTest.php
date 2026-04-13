@@ -20,6 +20,7 @@ class ValidatorTest extends TestCase
 
         $person = new class() implements Arrayable {
             public $attributes = ['email' => 'test@example.com'];
+
             public function toArray()
             {
                 return $this->attributes;
